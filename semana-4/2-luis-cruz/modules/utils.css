@@ -1,0 +1,45 @@
+.d-none {
+  display: none;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.m-top-auto {
+  margin-top: auto;
+}
+
+.f-direction-column {
+  flex-direction: column;
+}
+
+.j-items-center {
+  justify-items: center;
+}
+
+.gap-xs {
+  gap: calc(var(--padding-section) * 0.25);
+}
+
+.gap-sm {
+  gap: calc(var(--padding-section) * 0.5);
+}
+
+.gap-md {
+  gap: var(--padding-section);
+}
+
+.gap-lg {
+  gap: calc(var(--padding-section) * 1.5);
+}
+
+@media (min-width: 768px) {
+  .md\:d-block {
+    display: block;
+  }
+
+  .md\:f-direction-row {
+    flex-direction: row;
+  }
+}

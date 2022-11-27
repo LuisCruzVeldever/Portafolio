@@ -1,0 +1,116 @@
+.section {
+    padding-top: var(--padding-section);
+    padding-bottom: var(--padding-section);
+  }
+
+  .section--hero {
+    box-sizing: border-box;
+    min-height: 100vh;
+  }
+
+  .container {
+    max-width: var(--max-width-container);
+    margin: 0 auto;
+    padding-left: var(--padding-container);
+    padding-right: var(--padding-container);
+  }
+
+  .section--hero {
+    box-sizing: border-box;
+    min-height: 100vh;
+  }
+
+.section__name {
+    display: flex;
+    font-size: 4rem;
+    text-decoration: none;
+    animation: zoom 1s ease-in-out 0s infinite alternate;
+}
+
+.section__letter {
+    display: inline-block;
+    position: relative;
+    transition: filter 1s ease-in-out;
+}
+
+.section__letter:hover {
+    filter: brightness(2.5);
+}
+
+.section__letter:nth-child(1) {
+    color: var(--letter-color-1);
+}
+.section__letter:nth-child(2) {
+    color: var(--letter-color-2);
+}
+.section__letter:nth-child(3) {
+    color: var(--letter-color-3);
+}
+.section__letter:nth-child(4) {
+    color: var(--letter-color-4);
+}
+.section__letter:nth-child(5) {
+    color: var(--letter-color-5);
+}
+
+.section__letter:nth-child(6) {
+    color: var(--letter-color-6);
+}
+
+.section__letter::before {
+    content: var(--letter);
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: blur(0.25rem);
+    transform: scale(1.125);
+  }
+
+.section__letter::after {
+    content: var(--letter);
+    position: absolute;
+    top: 87.5%;
+    left:0;
+    filter: blur(0.625rem);
+    transform: rotatex(137.5deg);
+
+}
+
+.section__verse {
+    font-weight: 700;
+    text-shadow: 
+      0 0 0.0625rem var(--primary-highlight-color),
+      0 0 0.0125rem var(--primary-highlight-color),
+      0 0 0.25rem var(--primary-highlight-color);
+
+}
+
+.container {
+    max-width: var(--max-width-container); 
+    margin: 0 auto;
+    padding-left: var(--padding-container);
+    padding-right: var(--padding-container);
+}
+
+.f-elements {
+    display: flex;
+}
+    
+.f-elements--center {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media (min-width: 768px) {
+    .section__name {
+      font-size: 6rem;
+    }
+  
+    .section__verse {
+      font-size: 2rem;
+    }
+  
+    .section__verse::first-letter {
+      font-size: 2.5rem;
+    }
+  }
